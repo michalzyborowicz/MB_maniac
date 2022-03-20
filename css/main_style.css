@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 30px;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+}
+
+.wrapper header {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/header_big.jpg);
+  overflow: hidden;
+}
+
+.wrapper header h1 {
+  position: absolute;
+  color: whitesmoke;
+  top: 40%;
+  left: 5%;
+  font-size: 70px;
+  letter-spacing: 3px;
+  border-bottom: 3px solid #fff;
+}
+
+.wrapper header .nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  top: 55%;
+  left: 5%;
+}
+
+.wrapper header .nav .menu_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: whitesmoke;
+  font-size: 30px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.wrapper header .nav .menu_items i {
+  display: block;
+  margin: 15px auto 10px auto;
+}
+
+.wrapper header .nav .menu_items:hover {
+  color: #cf4acf;
+}
+
+.wrapper .youtube {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #222;
+}
+
+.wrapper .youtube h2 {
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.wrapper .youtube .last_videos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.wrapper .about {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #222;
+  color: whitesmoke;
+}
+
+.wrapper .about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .about .about_text {
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+.wrapper .contacts {
+  height: 100vh;
+  width: 100vw;
+  background-color: #222;
+  color: whitesmoke;
+}
+
+.wrapper .contacts h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.wrapper .contacts .contact_boxes {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .contacts .contact_boxes h3 {
+  letter-spacing: 2px;
+  margin: 0 auto 30px auto;
+  font-size: 35px;
+}
+
+.wrapper .contacts .contact_boxes .social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  height: 80vh;
+}
+
+.wrapper .contacts .contact_boxes .social_media i {
+  font-size: 40px;
+  padding: 20px;
+  margin-right: 30px;
+}
+
+.wrapper .contacts .contact_boxes .social_media a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.wrapper .contacts .contact_boxes .social_media a:hover {
+  color: #cf4acf;
+}
+
+.wrapper .contacts .contact_boxes .contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  height: 80vh;
+}
+
+.wrapper .contacts .contact_boxes .contact_form label {
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.wrapper .contacts .contact_boxes .contact_form input {
+  text-align: center;
+  padding: 5px 10px;
+  width: 50%;
+}
+
+.wrapper .contacts .contact_boxes .contact_form textarea {
+  width: 80%;
+  height: 20%;
+  max-height: 20%;
+  max-width: 80%;
+  text-align: center;
+}
+
+.wrapper .contacts .contact_boxes .contact_form .send {
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  border: 1px solid white;
+  -webkit-transition: color 0.3s, bacground-color 0.3s;
+  transition: color 0.3s, bacground-color 0.3s;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.wrapper .contacts .contact_boxes .contact_form .send:hover {
+  color: #222;
+  background-color: whitesmoke;
+}
+/*# sourceMappingURL=main_style.css.map */

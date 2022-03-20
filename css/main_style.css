@@ -100,6 +100,7 @@ section {
   color: whitesmoke;
   text-align: center;
   padding-top: 50px;
+  font-size: 40px;
 }
 
 .wrapper .youtube .last_videos {
@@ -123,7 +124,9 @@ section {
 
 .wrapper .about h2 {
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
 }
 
 .wrapper .about .about_text {

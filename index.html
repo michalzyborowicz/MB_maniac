@@ -15,26 +15,36 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <main>
         <header>
+            <button class="mobile-menu"><i class="fa-solid fa-bars"></i></button>
+<button class="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="hero-shadow"></div>
+            <div class="mobile-nav">
+                <h1 class="title">MB - Maniac</h1>
+                <nav class="mobile">
 
-            <h1>MB - Maniac</h1>
+                    <a href="#youtube" class="menu_items"><i class="fa-brands fa-youtube"></i>Youtube</a>
+                    <a href="#about" class="menu_items"><i class="fa-solid fa-id-card-clip"></i>O mnie</a>
+                    <a href="#contacts" class="menu_items"><i class="fa-solid fa-at"></i>Kontakt</a>
+                </nav>
+            </div>
 
-            <div class="nav">
-              
-                <a href="#youtube" class="menu_items"><i class="fa-brands fa-youtube"></i>Youtube</a>
-                <a href="#about" class="menu_items"><i class="fa-solid fa-id-card-clip"></i>O mnie</a>
-                <a href="#contacts" class="menu_items"><i class="fa-solid fa-at"></i>Kontakt</a>
+            <div class="desktop-nav">
+                <h1 class="title">MB - Maniac</h1>
+                <nav class="desktop">
+
+                    <a href="#youtube" class="menu_items"><i class="fa-brands fa-youtube"></i>Youtube</a>
+                    <a href="#about" class="menu_items"><i class="fa-solid fa-id-card-clip"></i>O mnie</a>
+                    <a href="#contacts" class="menu_items"><i class="fa-solid fa-at"></i>Kontakt</a>
+                </nav>
             </div>
         </header>
         <section id="youtube" class="youtube">
             <h2>Moje filmy.</h2>
 
             tutaj bedzie karuzela z filmami ale napisanie jej zajmie mi troche czasu
-            <div class="last_videos"><iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/cnpEwl1CC1E?start=1" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
+            <div class="last_videos"></div>
         </section>
         <section id="about" class="about">
             <h2>O mnie.</h2>
@@ -61,24 +71,28 @@
         <section id="contacts" class="contacts">
             <h2>Kontakt</h2>
             <div class="contact_boxes">
-            <div class="social_media"><h3>Znajdz mnie na:</h3>
-                <a href="" class="socieal_media_items"><i class="fa-brands fa-facebook-square"></i> Facebook</a>
-                <a href="" class="socieal_media_items"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                <a href="" class="socieal_media_items"><i class="fa-brands fa-discord"></i> Discord</a>
+                <div class="social_media">
+                    <h3>Znajdz mnie na:</h3>
+                    <a href="" class="socieal_media_items"><i class="fa-brands fa-facebook-square"></i> Facebook</a>
+                    <a href="" class="socieal_media_items"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href="" class="socieal_media_items"><i class="fa-brands fa-discord"></i> Discord</a>
+                </div>
+                <div class="contact_form">
+                    <h3>Napisz do mnie.</h3>
+                    <label id="name">Imie.</label>
+                    <input type="text" id="name" placeholder="Imie">
+                    <label mail>Twój adres mailowy:</label>
+                    <input type="text" id="mail" placeholder="twoj adres mailowy">
+                    <label id="text_area">Twoja wiadomość:</label>
+                    <textarea name="" id="text_area" placeholder="Twoja wiadomosc"></textarea>
+                    <button class="send">Wyślij</button>
+                </div>
             </div>
-            <div class="contact_form">
-                <h3>Napisz do mnie.</h3>
-                <label id="name">Imie.</label>
-                <input type="text" id="name" placeholder="Imie">
-                <label mail>Twój adres mailowy:</label>
-                <input type="text" id="mail" placeholder="twoj adres mailowy">
-                <label id="text_area">Twoja wiadomość:</label>
-                <textarea name="" id="text_area" placeholder="Twoja wiadomosc"></textarea>
-                <button class="send">Wyślij</button>
-            </div></div>
         </section>
-        <footer><p>Designed by M.Zyborowicz 2022</p></footer>
-    </div>
+        <footer>
+            <p>Designed by M.Zyborowicz 2022</p>
+        </footer>
+        </div>
 
 
 
@@ -87,7 +101,7 @@
 
 
 
-    <script src="./js/main.js"></script>
+        <script src="./js/main.js"></script>
 </body>
 
 </html>

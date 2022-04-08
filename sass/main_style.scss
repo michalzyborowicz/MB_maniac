@@ -148,9 +148,11 @@ main {
 	#youtube {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-around;
 		width: 100vw;
 		height: 100vh;
+		padding: 30px;
+		border-bottom: 1px solid $hoover-color;
 
 		h2 {
 			display: none;
@@ -213,16 +215,135 @@ main {
 		p {
 			text-align: center;
 			font-size: 25px;
-			margin-bottom: 10px;
+			margin-top: 0;
 			a {
 				text-decoration: none;
 				color: $hoover-color;
 			}
 		}
 	}
-
 	#about {
 		height: 100vh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		padding: 10px;
+		overflow: hidden;
+		border-bottom: 1px solid $hoover-color;
+		h2 {
+			border-bottom: 1px solid $hoover-color;
+		}
+		.cards {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			height: 100%;
+			width: 90%;
+			.card-box {
+				border: 1px solid $hoover-color;
+				width: 80%;
+				height: 30%;
+				padding: 10px;
+				border-radius: 5px;
+				overflow: scroll;
+				.card-img {
+					width: 100%;
+					height: 50%;
+					background-size: cover;
+					background-position: center;
+					background-image: url('https://source.unsplash.com/random/200x200');
+				}
+				h3 {
+					text-align: center;
+					padding: 10px;
+				}
+				p {
+					text-align: center;
+					font-size: 10px;
+				}
+			}
+		}
+	}
+	#contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100vh;
+		padding: 10px;
+		border-bottom: 1px solid $hoover-color;
+		h2 {
+			border-bottom: 1px solid $hoover-color;
+			margin-bottom: 10px;
+		}
+		.contact-boxes {
+			height: 90%;
+			width: 90%;
+			
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+
+			h3{letter-spacing: 2px;
+			border-bottom: 1px solid $hoover-color;}
+			.social-media {
+				
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				width: 100%;
+				height: 50%;
+				
+				a {
+					text-decoration: none;
+					color: $hoover-color;
+					letter-spacing: 1px;
+					font-size: 18px;
+					i {
+						margin-right: 10px;
+					}
+				}
+			}
+			.contact-form {
+				
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;height: 50%;
+			
+label{
+	letter-spacing: 2px;
+}
+
+				input,
+				textarea {
+					background: none;
+					border: none;
+					border-bottom: 1px solid $hoover-color;
+					
+					
+				}
+				textarea{
+					height: 50%;
+					width: 50%;
+					max-width: 50%;
+					max-height: 25%;
+				}
+				.send{
+					padding:5px 10px;
+					color: $font-color;
+					background-color: $hoover-color;
+					border: none;
+					border-radius: 5px;
+					letter-spacing: 1px;cursor: pointer;
+				}
+			}
+		}
 	}
 
 	//
@@ -277,10 +398,8 @@ main {
 					margin-bottom: 60px;
 				}
 			}
-			p {
-				margin-top: 0;
-			}
 		}
+		
 	}
 }
 @media (min-width: 992px) {
@@ -303,8 +422,54 @@ main {
 				display: block;
 			}
 			.yt-videos {
+				.trailer {
+					width: 50%;
+				}
 				.playlists {
 					display: flex;
+				}
+			}
+			p {
+				margin-bottom: 20px;
+			}
+		}
+		#about {
+			.cards {
+				flex-direction: row;
+				.card-box {
+					width: 30%;
+					height: 80%;
+					overflow: hidden;
+				}
+			}
+		}
+		#contact{
+			h2 {
+				font-size: 36px;
+			}
+			.contact-boxes{
+				flex-direction: row;
+				h3{
+					font-size: 30px;
+
+				}
+				.social-media, .contact-form {
+					height: 80%;width: 50%;
+
+				}
+				.social-media{
+a{
+	font-size: 28px;
+}
+				}
+				.contact-form{
+					input,
+				textarea{
+					width: 50%;
+				}
+				.send {
+					width: 30%;
+				}
 				}
 			}
 		}

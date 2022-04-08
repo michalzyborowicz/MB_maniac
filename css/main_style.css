@@ -192,11 +192,12 @@ main #youtube {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100vw;
   height: 100vh;
+  padding: 30px;
+  border-bottom: 1px solid #fca311;
 }
 
 main #youtube h2 {
@@ -285,7 +286,7 @@ main #youtube .yt-videos .playlists .playlist-box iframe {
 main #youtube p {
   text-align: center;
   font-size: 25px;
-  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 main #youtube p a {
@@ -295,6 +296,190 @@ main #youtube p a {
 
 main #about {
   height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #fca311;
+}
+
+main #about h2 {
+  border-bottom: 1px solid #fca311;
+}
+
+main #about .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 90%;
+}
+
+main #about .cards .card-box {
+  border: 1px solid #fca311;
+  width: 80%;
+  height: 30%;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: scroll;
+}
+
+main #about .cards .card-box .card-img {
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://source.unsplash.com/random/200x200");
+}
+
+main #about .cards .card-box h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+main #about .cards .card-box p {
+  text-align: center;
+  font-size: 10px;
+}
+
+main #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding: 10px;
+  border-bottom: 1px solid #fca311;
+}
+
+main #contact h2 {
+  border-bottom: 1px solid #fca311;
+  margin-bottom: 10px;
+}
+
+main #contact .contact-boxes {
+  height: 90%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #contact .contact-boxes h3 {
+  letter-spacing: 2px;
+  border-bottom: 1px solid #fca311;
+}
+
+main #contact .contact-boxes .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+main #contact .contact-boxes .social-media a {
+  text-decoration: none;
+  color: #fca311;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+main #contact .contact-boxes .social-media a i {
+  margin-right: 10px;
+}
+
+main #contact .contact-boxes .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+
+main #contact .contact-boxes .contact-form label {
+  letter-spacing: 2px;
+}
+
+main #contact .contact-boxes .contact-form input,
+main #contact .contact-boxes .contact-form textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fca311;
+}
+
+main #contact .contact-boxes .contact-form textarea {
+  height: 50%;
+  width: 50%;
+  max-width: 50%;
+  max-height: 25%;
+}
+
+main #contact .contact-boxes .contact-form .send {
+  padding: 5px 10px;
+  color: #e5e5e5;
+  background-color: #fca311;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 main footer {
@@ -332,9 +517,6 @@ main footer {
   main #youtube .trailer h2 {
     margin-bottom: 60px;
   }
-  main #youtube p {
-    margin-top: 0;
-  }
 }
 
 @media (min-width: 992px) {
@@ -352,10 +534,53 @@ main footer {
   main #youtube h2 {
     display: block;
   }
+  main #youtube .yt-videos .trailer {
+    width: 50%;
+  }
   main #youtube .yt-videos .playlists {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  main #youtube p {
+    margin-bottom: 20px;
+  }
+  main #about .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main #about .cards .card-box {
+    width: 30%;
+    height: 80%;
+    overflow: hidden;
+  }
+  main #contact h2 {
+    font-size: 36px;
+  }
+  main #contact .contact-boxes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main #contact .contact-boxes h3 {
+    font-size: 30px;
+  }
+  main #contact .contact-boxes .social-media, main #contact .contact-boxes .contact-form {
+    height: 80%;
+    width: 50%;
+  }
+  main #contact .contact-boxes .social-media a {
+    font-size: 28px;
+  }
+  main #contact .contact-boxes .contact-form input,
+  main #contact .contact-boxes .contact-form textarea {
+    width: 50%;
+  }
+  main #contact .contact-boxes .contact-form .send {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=main_style.css.map */

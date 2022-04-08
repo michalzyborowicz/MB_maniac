@@ -405,6 +405,7 @@ main #contact .contact-boxes {
 main #contact .contact-boxes h3 {
   letter-spacing: 2px;
   border-bottom: 1px solid #fca311;
+  margin-bottom: 20px;
 }
 
 main #contact .contact-boxes .social-media {
@@ -463,12 +464,11 @@ main #contact .contact-boxes .contact-form textarea {
   background: none;
   border: none;
   border-bottom: 1px solid #fca311;
+  width: 100%;
 }
 
 main #contact .contact-boxes .contact-form textarea {
   height: 50%;
-  width: 50%;
-  max-width: 50%;
   max-height: 25%;
 }
 
@@ -568,7 +568,8 @@ main footer {
   main #contact .contact-boxes h3 {
     font-size: 30px;
   }
-  main #contact .contact-boxes .social-media, main #contact .contact-boxes .contact-form {
+  main #contact .contact-boxes .social-media,
+  main #contact .contact-boxes .contact-form {
     height: 80%;
     width: 50%;
   }
@@ -578,6 +579,9 @@ main footer {
   main #contact .contact-boxes .contact-form input,
   main #contact .contact-boxes .contact-form textarea {
     width: 50%;
+  }
+  main #contact .contact-boxes .contact-form textarea {
+    max-width: 50%;
   }
   main #contact .contact-boxes .contact-form .send {
     width: 30%;
